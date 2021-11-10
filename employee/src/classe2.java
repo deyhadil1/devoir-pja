@@ -23,11 +23,11 @@ public class classe2{
             return;
         }
         System.out.println("Employee deserialise...");
-        for (Employee e1 : e) {
-            System.out.println("Nom: " + e1.name);
-            System.out.println("address: " + e1.address);
-            System.out.println("SSN: " + e1.SSN);
-            System.out.println("number: " + e1.number);
+        for (i=0;i<e.length;i++) {
+            System.out.println("Nom: " + e[i].name);
+            System.out.println("address: " + e[i].address);
+            System.out.println("SSN: " + e[i].SSN);
+            System.out.println("number: " + e[i].number);
         }
         RandomAccessFile ran = new RandomAccessFile("empdirect.dat", "rw");
         for (int i=0; i<e.length; i++) {
